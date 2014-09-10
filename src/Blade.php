@@ -1,4 +1,4 @@
-<?php namespace FiftyOnRed\Blade;
+<?php namespace Spatie\Blade;
 
 use Illuminate\Container\Container;
 use Illuminate\Events\Dispatcher;
