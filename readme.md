@@ -4,7 +4,7 @@ The package can be installed via Composer by requiring the "50onred/laravel-blad
 ```json
 [
 	"require": {
-	    "50onred/laravel-blade": "1.3"
+	    "spatie/laravel-blade": "dev-master"
 	}
 ]
 ```
