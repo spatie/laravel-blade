@@ -6,12 +6,8 @@
 ### Installation
 The package can be installed via Composer by requiring the "50onred/laravel-blade": "1.3" package in your project's composer.json.
 
-```json
-[
-	"require": {
-	    "spatie/laravel-blade": "0.1.*"
-	}
-]
+```bash
+composer require spatie/laravel-blade
 ```
 
 ### Usage
