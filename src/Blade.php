@@ -10,7 +10,7 @@ use Illuminate\View\Engines\CompilerEngine;
 use Illuminate\View\Engines\EngineResolver;
 use Illuminate\View\Compilers\BladeCompiler;
 use Illuminate\View\FileViewFinder;
-use Illuminate\View\Environment;
+use Illuminate\View\Factory;
 
 class Blade {
 
@@ -170,14 +170,14 @@ class Blade {
 
 		$finder = $this->container['view.finder'];
 
-		$env = new Environment($resolver, $finder, $this->container['events']);
+		$factory = new Factory($resolver, $finder, $this->container['events']);
 
 		// We will also set the container instance on this view environment since the
 		// view composers may be classes registered in the container, which allows
 		// for great testable, flexible composers for the application developer.
-		$env->setContainer($this->container);
+		$factory->setContainer($this->container);
 
-		return $env;
+		return $factory;
 	}
 
 }
